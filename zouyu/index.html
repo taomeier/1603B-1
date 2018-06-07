@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='format-detection' content='telephone=no,email=no,address=no'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,max-scale=1.0,min-scale=1.0,user-scalable=no'>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/conmon.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script>document.documentElement.style.fontSize = window .innerWidth / 750 *100 + 'px';</script>
+    <style>
+        img{
+            width:100%;
+            height:auto;
+            display: block;
+        }
+        .wraper{
+            background:#1D1D28;
+        }
+        header{
+            width:100%;
+            height:40px;
+            line-height: 40px;
+            font-size: 17px;
+            text-align: center;
+            position: relative;
+            color:#fff;
+        }
+        header .icon-left{
+            position: absolute;
+            width:auto;
+            height:auto;
+            left:2.8%;
+            top:50%;
+            transform: translateY(-50%);
+            font-size:17.5px;
+        }
+        .scroll{
+            width:100%;
+            height:100%;
+            overflow-y: auto;
+        }
+        .search{
+            width:100%;
+            height:44px;
+            line-height: 44px;
+            padding:0 5%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(-135deg, #2CBB55 0%, #2CBB86 100%);
+        }
+        .img-page{
+            width:40px;
+            height:21px;
+            background:url('./imgs/首页-logo@2x.png') no-repeat center;
+            background-size: 100%;
+        }
+        .search-inp{
+            flex:1;
+            margin:0 5%;
+            height:30px;
+            background:#fff;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .img-search{
+            width:14px;
+            height:14px;
+            margin:0 5%;
+            background:url('./imgs/搜索icon@2x.png') no-repeat center;
+            background-size: 100%;
+        }
+        .search-inp input{
+            flex:1;
+            height:100%;
+            border-radius: 15px;
+        }
+        .classify{
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .img-down{
+            width:9px;
+            height:6px;
+            margin-left:7px;
+            background: url("./imgs/下拉icon@2x.png") no-repeat center;
+            background-size: 100%;
+        }
+        .banner{
+            width:90%;
+            height:auto;
+            margin:2.2% auto;
+        }
+        nav{
+            width:90%;
+            height:auto;
+            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav dl{
+            width:25%;
+            height:auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        dt{
+            width:40px;
+            height:40px;
+            margin-bottom:5%;
+        }
+        dd{
+            text-align: center;
+            font-size: 13px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            margin-bottom:20%;
+        }
+        .gold{
+            width:90%;
+            height:auto;
+            margin:0 auto;
+            margin-top:4.8%;
+        }
+        .gold h4{
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            color:#fff;
+        }
+        .img-gold{
+            width:4px;
+            height:15px;
+            margin-right:8px;
+            background: url("./imgs/标示icon@2x.png") no-repeat center;
+            background-size: 100%;
+        }
+        .block{
+            width:100%;
+            height:90px;
+            line-height: 90px;
+            text-align: center;
+            margin-top:2.2%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .block span{
+            width:48%;
+            height:100%;
+            color:#fff;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .international{
+            background: url("./imgs/国际@2x.png") no-repeat center;
+        }
+        .beauty{
+            background: url("./imgs/黄@2x.png") no-repeat center;
+        }
+        footer{
+            width:100%;
+            height:50px;
+            background:#fff;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer a{
+            width:50%;
+            height: 100%;
+            font-size: 15px;
+            color: #363645;
+            letter-spacing: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer a span{
+            width:22px;
+            height:22px;
+            margin-right:2.1%;
+        }
+        .img-pag{
+            background: url("./imgs/首页@2x.png") no-repeat center;
+            background-size: 100%;
+        }
+        .img-my{
+            background: url("./imgs/我的@2x.png") no-repeat center;
+            background-size: 100%;
+        }
+        .focus{
+            color:#2CBB55;
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <header>
+            <span class="icon-left"><i class="icon iconfont icon-xiangzuo"></i></span>
+            多加网
+        </header>
+        <section>
+            <div class="scroll">
+                <div class="search">
+                    <span class="img-page"></span>
+                    <div class="search-inp">
+                        <span class="img-search"></span>
+                        <input type="text" placeholder="搜索项目或医院">
+                    </div>
+                    <div class="classify">
+                        分类
+                        <span class="img-down"></span>
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="imgs/banner@2x.png" alt="">
+                </div>
+                <nav>
+                    <dl>
+                        <dt><img src="imgs/成单@2x.png" alt=""></dt>
+                        <dd>成单奖励</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/推荐@2x.png" alt=""></dt>
+                        <dd>推荐新人</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/收益@2x.png" alt=""></dt>
+                        <dd>收益滚利</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/年度@2x.png" alt=""></dt>
+                        <dd>阶梯奖励</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/客源@2x.png" alt=""></dt>
+                        <dd>异业拓客</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/集采@2x.png" alt=""></dt>
+                        <dd>集采反现</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/新品@2x.png" alt=""></dt>
+                        <dd>新品悬赏</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="imgs/期待@2x.png" alt=""></dt>
+                        <dd>敬请期待</dd>
+                    </dl>
+                </nav>
+                <div class="gold">
+                    <h4>
+                        <span class="img-gold"></span>
+                        金牌商家
+                    </h4>
+                    <div class="block">
+                        <span class="international">
+                            悦美国际
+                        </span>
+                        <span class="beauty">
+                            美人魅力
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="#" class="focus">
+                <span class="img-pag"></span>
+                首页
+            </a>
+            <a href="#">
+                <span class="img-my"></span>
+                我的
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
